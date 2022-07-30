@@ -16,11 +16,6 @@
   "lint-staged": {
     "**/*": "yarn prettier:check && yarn lint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@tabler/icons": "^1.78.1",
     "next": "12.2.3",
