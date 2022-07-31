@@ -1,6 +1,6 @@
 const teams = [
   {
-    name: "Risky Fajriansyah",
+    name: "Rizky Fajriansyah",
     role: ["Founder", "FullStack Developer"],
     picture:
       "https://images.unsplash.com/photo-1579038773867-044c48829161?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
@@ -12,7 +12,7 @@ const teams = [
       "https://images.unsplash.com/photo-1584940120743-8981ca35b012?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
   },
   {
-    name: "Adityawarman Dewa",
+    name: "Adityawarman Dewa P",
     role: "FullStack Developer",
     picture:
       "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",

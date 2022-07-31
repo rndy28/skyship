@@ -92,6 +92,9 @@ export const cardGrid = css`
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   gap: 2rem;
   place-items: center;
+  @media (max-width: 700px) {
+    grid-template-columns: unset !important;
+  }
 `;
 
 export const teamsLayout = css`

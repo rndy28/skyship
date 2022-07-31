@@ -172,11 +172,12 @@ const Home: NextPage = () => {
       <Footer>
         <Logo />
         <Footer.Items>
-          {links.map((link) => (
+          {/* {links.map((link) => (
             <Footer.Item key={link}>
               <a>{link}</a>
             </Footer.Item>
-          ))}
+          ))} */}
+          <a>© 2022 - SkyShip</a>
         </Footer.Items>
         <Flex gap="1rem">
           <Footer.IconContainer>
