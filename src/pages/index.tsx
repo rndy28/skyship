@@ -70,11 +70,17 @@ const Home: NextPage = () => {
         <Nav>
           <Logo />
           <Nav.Items className={open ? "open" : ""}>
-            {links.map((link) => (
-              <Nav.Item key={link}>
-                <Link href={link}>{link}</Link>
-              </Nav.Item>
-            ))}
+            {links.map((link) =>
+              link === "home" ? (
+                <Nav.Item key={link}>
+                  <Link href="/">{link}</Link>
+                </Nav.Item>
+              ) : (
+                <Nav.Item key={link}>
+                  <Link href={link}>{link}</Link>
+                </Nav.Item>
+              ),
+            )}
           </Nav.Items>
           <Hamburger aria-pressed={open} onClick={handleHamburger} />
         </Nav>
