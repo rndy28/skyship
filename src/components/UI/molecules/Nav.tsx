@@ -22,9 +22,10 @@ const Items = styled.ul`
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 1rem;
   background-color: #fff;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 1rem 2rem;
+  box-shadow: rgba(17, 12, 46, 0.25) 0px 48px 100px 0px;
+  padding: 1.5rem 2rem;
   border-radius: 0.45rem;
   width: 100%;
   transition: transform 0.4s ease;
@@ -49,14 +50,10 @@ const Items = styled.ul`
 const Item = styled.li`
   color: #4c566a;
   font-weight: 400;
-  margin-top: 0.5rem;
   text-transform: capitalize;
   transition: color 0.3s ease-in;
   &:hover {
     color: #8994a9;
-  }
-  @media (min-width: 950px) {
-    margin-top: 0;
   }
 `;
 
