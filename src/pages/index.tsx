@@ -93,9 +93,11 @@ const Home: NextPage = () => {
           <div css={introContainer}>
             <h1>We help startups and agencies to achieve their goals</h1>
             <p>We create beautiful digital products for our client around the world 🌏</p>
-            <Button size="lg" variant="primary">
-              Let&apos;s talk
-            </Button>
+            <Link href="mailto: skyship@gmail.com?subject=Hei i would like to talk..." passHref>
+              <Button size="lg" variant="primary">
+                Let&apos;s talk
+              </Button>
+            </Link>
           </div>
         </Flex>
       </Header>
@@ -159,26 +161,22 @@ const Home: NextPage = () => {
           cupiditate quod, repudiandae inventore quibusdam nisi ipsum magnam. Nesciunt commodi
           aliquam non obcaecati corrupti nulla earum ducimus aliquid?
         </Banner.Description>
-        <Button
-          variant="secondary"
-          size="md"
-          css={`
-            margin-top: 0.5rem;
-          `}
-        >
-          Contact Us
-        </Button>
+        <Link href="mailto: skyship@gmail.com?subject=Hei i would like to talk..." passHref>
+          <Button
+            variant="secondary"
+            size="md"
+            css={`
+              margin-top: 0.5rem;
+            `}
+            asLink
+          >
+            Contact Us
+          </Button>
+        </Link>
       </Banner>
       <Footer>
         <Logo />
-        <Footer.Items>
-          {/* {links.map((link) => (
-            <Footer.Item key={link}>
-              <a>{link}</a>
-            </Footer.Item>
-          ))} */}
-          <a>© 2022 - SkyShip</a>
-        </Footer.Items>
+        <a>&copy; {new Date().getFullYear()} - SkyShip</a>
         <Flex gap="1rem">
           <Footer.IconContainer>
             <IconBrandFacebook />
