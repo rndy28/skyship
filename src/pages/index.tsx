@@ -181,7 +181,7 @@ const Home: NextPage = () => {
         </Link>
       </Banner>
       <Footer>
-        <a>&copy; {new Date().getFullYear()} - Skyship</a>
+        <a>&copy; Skyship 2022 - {new Date().getFullYear()}</a>
         <Flex gap="1rem">
           <Footer.IconContainer>
             <IconBrandFacebook />
