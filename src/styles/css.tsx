@@ -83,7 +83,7 @@ export const boxIllustrationPlaceholder = css`
     right: 2rem;
     z-index: -1;
     background-color: #4146d7;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 15px 70px 0px;
   }
 `;
 

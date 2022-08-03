@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import styled from "styled-components";
 import React from "react";
 
@@ -46,12 +47,27 @@ const SubTitle = styled.h1`
 `;
 
 interface Props extends React.ComponentPropsWithoutRef<"section"> {}
+interface PropsTitle extends React.ComponentPropsWithoutRef<"h5"> {}
+interface PropsSubTitle extends React.ComponentPropsWithoutRef<"h1"> {}
 
 const Section = ({ children, ...props }: Props) => {
   return <Container {...props}>{children}</Container>;
 };
 
-Section.Title = Title;
-Section.SubTitle = SubTitle;
+Section.Title = ({ children, ...props }: PropsTitle) => {
+  return (
+    <Title data-aos="fade-right" {...props}>
+      {children}
+    </Title>
+  );
+};
+
+Section.SubTitle = ({ children, ...props }: PropsSubTitle) => {
+  return (
+    <SubTitle data-aos="fade-right" {...props}>
+      {children}
+    </SubTitle>
+  );
+};
 
 export default Section;

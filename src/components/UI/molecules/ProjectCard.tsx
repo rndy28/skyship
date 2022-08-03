@@ -13,14 +13,14 @@ const Title = styled.h2`
   margin-block: 1rem 0.5rem;
 `;
 
-type Props = {
+interface Props extends React.ComponentPropsWithoutRef<"div"> {
   title: string;
   picture: string;
-};
+}
 
-const ProjectCard = ({ title, picture }: Props) => {
+const ProjectCard = ({ title, picture, ...props }: Props) => {
   return (
-    <Container>
+    <Container {...props}>
       <Image src={picture} alt={title} width={400} height={300} objectFit="fill" />
       <Title>{title}</Title>
     </Container>

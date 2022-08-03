@@ -23,26 +23,28 @@ const Wrapper = styled(Flex)`
   padding: 0.5rem 1rem 1.2rem 1rem;
 `;
 
-type Props = {
+interface Props extends React.ComponentPropsWithoutRef<"div"> {
   name: string;
-  role: string | string[];
+  position: string | string[];
   picture: string;
-};
+}
 
-const IntroCard = ({ name, role, picture }: Props) => {
+const IntroCard = ({ name, position, picture, ...props }: Props) => {
   return (
-    <Container>
+    <Container {...props}>
       <Image
         src={picture}
-        alt={`${name} - ${typeof role === "object" ? role[0] : role}`}
+        alt={`${name} - ${typeof position === "object" ? position[0] : position}`}
         width={350}
         height={500}
       />
       <Wrapper direction="column-reverse" gap="0.5rem">
         <Role>
-          {typeof role === "object"
-            ? role.map((r, idx) => (role[idx] !== role[role.length - 1] ? `${r} - ` : r))
-            : role}
+          {typeof position === "object"
+            ? position.map((r, idx) =>
+                position[idx] !== position[position.length - 1] ? `${r} - ` : r,
+              )
+            : position}
         </Role>
         <Name>{name}</Name>
       </Wrapper>

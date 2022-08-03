@@ -33,7 +33,7 @@ interface Props extends React.ComponentPropsWithoutRef<"div"> {}
 
 const Hamburger = (props: Props) => {
   return (
-    <Container role="button" tabIndex={0} className="nav-hamburger" {...props}>
+    <Container jabatan="button" tabIndex={0} className="nav-hamburger" {...props}>
       {Array(2)
         .fill(null)
         .map((_, idx) => (

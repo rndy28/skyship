@@ -6,6 +6,7 @@ const Container = styled.header`
   max-width: 80rem;
   width: 90%;
   margin-inline: auto;
+  overflow: hidden;
   @media (min-width: 900px) {
     width: 93%;
   }

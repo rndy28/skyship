@@ -24,21 +24,21 @@ const Description = styled.p`
   margin-top: 1rem;
 `;
 
-type Props = {
+interface Props extends React.ComponentPropsWithoutRef<"div"> {
   name: string;
-  role: string;
+  position: string | string[];
   picture: string;
   testimonial: string;
-};
+}
 
-const TestimonialCard = ({ name, picture, role, testimonial }: Props) => {
+const TestimonialCard = ({ name, picture, position, testimonial, ...props }: Props) => {
   return (
-    <Container>
+    <Container {...props}>
       <Flex gap="1rem" alignItems="center">
-        <Profile src={picture} alt={`${name} - ${role}`} />
+        <Profile src={picture} alt={`${name} - ${position}`} />
         <Flex direction="column" gap="0.4rem">
           <Name>{name}</Name>
-          <Role>{role}</Role>
+          <Role>{position}</Role>
         </Flex>
       </Flex>
       <Description>{testimonial}</Description>

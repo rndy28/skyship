@@ -85,7 +85,7 @@ const Home: NextPage = () => {
           <Hamburger aria-pressed={open} onClick={handleHamburger} />
         </Nav>
         <Flex justifyContent="center" alignItems="center" css={introLayout}>
-          <div css={boxIllustrationContainer}>
+          <div css={boxIllustrationContainer} data-aos="fade-up">
             <Image
               src="https://images.unsplash.com/photo-1549399905-5d1bad747576?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=535&q=80"
               alt="Desk setup"
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
             />
             <div css={boxIllustrationPlaceholder} />
           </div>
-          <div css={introContainer}>
+          <div css={introContainer} data-aos="fade-left" data-aos-delay="300">
             <h1>We help startups and agencies to achieve their goals</h1>
             <p>We create beautiful digital products for our client around the world 🌏</p>
             <Link href="mailto: skyship@gmail.com?subject=Hei i would like to talk..." passHref>
@@ -114,13 +114,19 @@ const Home: NextPage = () => {
           <Flex direction="column">
             {services.map((service, idx) =>
               services[idx] === services[0] ? (
-                <ServiceCard key={idx} {...service} className="active" />
+                <ServiceCard
+                  key={idx}
+                  {...service}
+                  className="active"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                />
               ) : (
-                <ServiceCard key={idx} {...service} />
+                <ServiceCard key={idx} {...service} data-aos="fade-right" data-aos-delay="200" />
               ),
             )}
           </Flex>
-          <div className="illustration">
+          <div className="illustration" data-aos="fade-up">
             <Image
               src="/assets/undraw_programming_re_kg9v.svg"
               alt="Programmer while working"
@@ -136,7 +142,14 @@ const Home: NextPage = () => {
         <Section.SubTitle>Who is part of Our team 🌟</Section.SubTitle>
         <Flex gap="2rem" flexWrap="wrap" css={teamsLayout}>
           {teams.map((dev, idx) => (
-            <IntroCard key={idx} name={dev.name} picture={dev.picture} role={dev.role} />
+            <IntroCard
+              key={idx}
+              name={dev.name}
+              picture={dev.picture}
+              position={dev.role}
+              data-aos="fade-up"
+              data-aos-delay={300 * (idx + 1)}
+            />
           ))}
         </Flex>
       </Section>
@@ -146,7 +159,12 @@ const Home: NextPage = () => {
         <Section.SubTitle>Some projects that we&apos;ve done in the past 🚀</Section.SubTitle>
         <div css={cardGrid}>
           {portfolios.map((portfolio, idx) => (
-            <ProjectCard key={idx} {...portfolio} />
+            <ProjectCard
+              key={idx}
+              {...portfolio}
+              data-aos="fade-up"
+              data-aos-delay={300 * (idx + 1)}
+            />
           ))}
         </div>
       </Section>
@@ -156,7 +174,12 @@ const Home: NextPage = () => {
         <Section.SubTitle>What people writing about Us 💙</Section.SubTitle>
         <div css={cardGrid}>
           {testimonials.map((testimonial, idx) => (
-            <TestimonialCard key={idx} {...testimonial} />
+            <TestimonialCard
+              key={idx}
+              {...testimonial}
+              data-aos="fade-up"
+              data-aos-delay={400 * (idx + 1)}
+            />
           ))}
         </div>
       </Section>
