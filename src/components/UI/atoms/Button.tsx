@@ -114,12 +114,7 @@ interface PropsLink extends React.ComponentPropsWithoutRef<"a">, StyledButtonPro
 const Button = forwardRef<unknown, Props | PropsLink>(
   ({ children, loading, size, ...props }, ref) => {
     return "asLink" in props ? (
-      <StyledLink
-        size={size}
-        jabatan="button"
-        ref={ref as ForwardedRef<HTMLAnchorElement>}
-        {...props}
-      >
+      <StyledLink size={size} role="button" ref={ref as ForwardedRef<HTMLAnchorElement>} {...props}>
         {loading ? <ButtonLoader size={size} /> : children}
       </StyledLink>
     ) : (
