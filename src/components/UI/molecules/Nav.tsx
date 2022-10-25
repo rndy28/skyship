@@ -6,9 +6,9 @@ const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   min-height: 5rem;
   @media (min-width: 950px) {
+    position: relative;
     .nav-hamburger {
       display: none;
     }
@@ -27,7 +27,8 @@ const Items = styled.ul`
   box-shadow: rgba(17, 12, 46, 0.25) 0px 48px 100px 0px;
   padding: 1.5rem 2rem;
   border-radius: 0.45rem;
-  width: 100%;
+  max-width: 80rem;
+  width: 90%;
   transition: transform 0.4s ease;
   z-index: 999;
   max-width: 25rem;

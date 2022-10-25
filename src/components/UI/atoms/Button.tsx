@@ -80,7 +80,6 @@ const baseBtn = css<StyledButtonProps>`
   font-size: 0.95rem;
   font-weight: 600;
   transition: all 250ms ease;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   &:disabled {
     ${disabled}
   }
@@ -113,11 +112,21 @@ interface PropsLink extends React.ComponentPropsWithoutRef<"a">, StyledButtonPro
 
 const Button = forwardRef<unknown, Props | PropsLink>(
   ({ children, loading, size, ...props }, ref) => {
-    return "asLink" in props ? (
-      <StyledLink size={size} role="button" ref={ref as ForwardedRef<HTMLAnchorElement>} {...props}>
-        {loading ? <ButtonLoader size={size} /> : children}
-      </StyledLink>
-    ) : (
+    if ("asLink" in props) {
+      const { asLink, ...rest } = props;
+      return (
+        <StyledLink
+          size={size}
+          role="button"
+          ref={ref as ForwardedRef<HTMLAnchorElement>}
+          {...rest}
+        >
+          {loading ? <ButtonLoader size={size} /> : children}
+        </StyledLink>
+      );
+    }
+
+    return (
       <Container size={size} ref={ref as ForwardedRef<HTMLButtonElement>} {...props}>
         {loading ? <ButtonLoader size={size} /> : children}
       </Container>

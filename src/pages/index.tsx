@@ -204,7 +204,21 @@ const Home: NextPage = () => {
         </Link>
       </Banner>
       <Footer>
-        <a>&copy; Skyship 2022 - {new Date().getFullYear()}</a>
+        <p
+          css={`
+            color: #fff;
+          `}
+        >
+          Copyright &copy; {new Date().getFullYear()}{" "}
+          <span
+            css={`
+              text-decoration: underline;
+            `}
+          >
+            Skyship
+          </span>{" "}
+          All Rights Reserved.
+        </p>
         <Flex gap="1rem">
           <Footer.IconContainer>
             <IconBrandFacebook />
