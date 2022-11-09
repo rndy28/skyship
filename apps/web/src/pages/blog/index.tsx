@@ -13,7 +13,7 @@ const Blog: NextPage<{ posts: Post[] }> = ({ posts }) => {
     <Layout title="Blog">
       <div className="max-w-7xl w-[90%] mx-auto py-8">
         <BackButton />
-        <main className="max-w-2xl mx-auto mt-4">
+        <main className="max-w-2xl mx-auto mt-8 xl:mt-4">
           <h1 className="text-4xl underline underline-offset-8">Blog</h1>
           <div className="flex flex-col gap-8 mt-10">
             {posts.map((post) => (
