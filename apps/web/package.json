@@ -2,6 +2,7 @@
   "name": "@skyship/web",
   "version": "0.1.0",
   "private": true,
+  "author": "skyship <skyship@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

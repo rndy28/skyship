@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "package.json",
-  "author": "Rendy Ramadhan <rendyramadhan838@gmail.com>",
+  "author": "skyship <skyship@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
