@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 
-const baseLine = "w-inherit h-[2px] absolute bg-[#434c5e] transition-all ease-in-out";
+const line = "w-inherit h-[2px] absolute bg-[#434C5E] transition-all duration-200 ease-in";
 
 const Hamburger = ({
   className,
@@ -15,12 +15,11 @@ const Hamburger = ({
       className={clsx("relative z-10 w-5 h-[0.9rem] cursor-pointer", className)}
       {...props}
     >
-      <span className={clsx(baseLine, pressed ? "top-[6px] rotate-[135deg]" : "top-[1px]")} />
       <span
-        className={clsx(
-          baseLine,
-          pressed ? "top-[6px] -rotate-[135deg] w-inherit" : "top-[0.6rem] w-8"
-        )}
+        className={clsx(line, pressed ? "top-[6px] rotate-[135deg]" : "top-[1px] right-0")}
+      />
+      <span
+        className={clsx(line, pressed ? "top-[6px] -rotate-[135deg] w-inherit" : "top-[0.6rem]")}
       />
     </div>
   );
