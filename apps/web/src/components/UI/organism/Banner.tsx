@@ -5,7 +5,7 @@ const Banner = ({ children, className, ...props }: React.ComponentPropsWithoutRe
   return (
     <div
       className={clsx(
-        "bg-primary text-white min-h-[15rem] w-full flex flex-col gap-2 items-center justify-center text-center p-8 md:py-0",
+        "bg-primary text-white min-h-[15rem] w-full flex flex-col gap-2 items-center justify-center text-center px-4 md:p-8 py-8 md:py-0 lg:py-16",
         className
       )}
       {...props}
@@ -31,7 +31,7 @@ Banner.Title = ({ children, className, ...props }: React.ComponentPropsWithoutRe
 
 Banner.Description = ({ children, className, ...props }: React.ComponentPropsWithoutRef<"p">) => {
   return (
-    <p className={clsx("text-inherit max-w-[40rem]", className)} {...props}>
+    <p className={clsx("text-inherit text-sm leading-relaxed md:text-lg max-w-[20rem] md:max-w-[40rem] lg:max-w-[50rem]", className)} {...props}>
       {children}
     </p>
   );
