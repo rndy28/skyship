@@ -78,7 +78,7 @@ const Home: NextPage<{ posts: Post[] }> = ({ posts }) => {
           </Nav.Items>
           <Hamburger className="2md:hidden" aria-pressed={open} onClick={handleHamburger} />
         </Nav>
-        <div className="flex justify-center items-center mt-40 2md:gap-12 2md:mt-0 2md:h-[calc(100vh_-_7rem)] xl:gap-20 2xl:gap-24 3xl:gap-[28rem]">
+        <div className="flex justify-center items-center mt-40 2md:gap-12 2md:mt-0 2md:h-[calc(100vh_-_7rem)] xl:gap-20 2xl:gap-24">
           <div
             className="hidden 2md:inline-block 2md:relative 2md:min-h-[17rem] 2md:w-[17rem] min-[1000px]:min-h-[19rem] min-[1000px]:w-[19rem] min-[1100px]:min-h-[22rem] min-[1100px]:w-[22rem] min-[1200px]:min-h-[24rem] min-[1200px]:w-[24rem] min-[1300px]:min-h-[28rem] min-[1300px]:w-[28rem]"
             data-aos="fade-up"
