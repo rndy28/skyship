@@ -1692,16 +1692,16 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-3.0.0.tgz#60e9cba61b82103ea3761730a53cd9310b98892d"
   integrity sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==
 
-"@sanity/groq-store@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@sanity/groq-store/-/groq-store-0.4.1.tgz#2a1f834b2f53e75f2b1b2d8c8457f345b9d38ecf"
-  integrity sha512-duLH/moE5TxJkUfwDiCCeHzRfltV/vzT4Qle48CdaWqT90CMJ+6m31PC4J3FG1uzNWFc82rOP6SG5nfww9ea4Q==
+"@sanity/groq-store@^1.0.3":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@sanity/groq-store/-/groq-store-1.0.4.tgz#ad014fb2bbd7037a5dd8a3d6270787b4f1a70927"
+  integrity sha512-/VkUkTR3/xVIcFUrfxSm6NdPCgXg8MURNd8K7ftdRonNGh/rOZtTcvqj24mJueZhuoy+843himF3nOleMtuyrA==
   dependencies:
-    "@sanity/types" "^2.0.1"
-    eventsource "^1.0.7"
+    "@sanity/types" "^2.35.0"
+    eventsource "^2.0.2"
     fast-deep-equal "^3.1.3"
-    groq "^2.0.9"
-    groq-js "^1.0.1"
+    groq "^2.33.2"
+    groq-js "^1.1.1"
     mendoza "^2.1.1"
     simple-get "^4.0.1"
     split2 "^4.1.0"
@@ -1946,7 +1946,7 @@
     "@types/lodash" "^4.14.149"
     lodash "^4.17.15"
 
-"@sanity/types@2.35.0", "@sanity/types@^2.0.1":
+"@sanity/types@2.35.0", "@sanity/types@^2.35.0":
   version "2.35.0"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-2.35.0.tgz#e74aba391885061188f8a045e37b9d1f0806ff38"
   integrity sha512-hocM0bZVa6ONVjLA50gxRSwIcmsaRPpvhl71MgutHxcnvsGZD55n2LQZb4n7h+J9yEFSkz9lY8HbY8n/bw8tsw==
@@ -4948,7 +4948,7 @@ eventsource-polyfill@^0.9.6:
   resolved "https://registry.yarnpkg.com/eventsource-polyfill/-/eventsource-polyfill-0.9.6.tgz#10e0d187f111b167f28fdab918843ce7d818f13c"
   integrity sha512-LyMFp2oPDGhum2lMvkjqKZEwWd2/AoXyt8aoyftTBMWwPHNgU+2tdxhTHPluDxoz+z4gNj0uHAPR9nqevATMbg==
 
-eventsource@^1.0.7, eventsource@^1.1.1:
+eventsource@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.2.tgz#bc75ae1c60209e7cb1541231980460343eaea7c2"
   integrity sha512-xAH3zWhgO2/3KIniEKYPr8plNSzlGINOUqYj0m0u7AB81iRw8b/3E73W6AuU+6klLbaSFmZnaETQ2lXPfAydrA==
@@ -5767,12 +5767,12 @@ groq-js@^0.2.0:
   resolved "https://registry.yarnpkg.com/groq-js/-/groq-js-0.2.0.tgz#abd4870014a1ccdf0936d5d75a78063aff9197c0"
   integrity sha512-qJeuEgziddryH1ClsJvMoZM9aXNQbBViNZZrJwhHKr2wU8HGGM7uNWNVFglWXMX60MMaa2SClX3UohP76Ut68g==
 
-groq-js@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/groq-js/-/groq-js-1.1.0.tgz#15188fbbd543b282656682d9736459bf6a561b41"
-  integrity sha512-y87W921Jg9IAksKT9LFvDMrYG9KIcgUDyE4ccENV7K26CKvg1V0lOTJbE1UNI8DcSk/bvx/MWFI7j3iUkCe/gA==
+groq-js@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/groq-js/-/groq-js-1.1.1.tgz#2ab132bc8015b0dccfe21adc28490d79e22c6f0d"
+  integrity sha512-qzUfJepffRUcSwjU3x2m30SUrhbssAR1Qs1DUq9+xmT2yeyO/3Il8+AkML8Tc6twWv20bL/KQgE8ig2Sbixu0w==
 
-groq@^2.0.9, groq@^2.33.2:
+groq@^2.33.2:
   version "2.33.2"
   resolved "https://registry.yarnpkg.com/groq/-/groq-2.33.2.tgz#3a85c85a1e43e79bba77f171f23997f541d61010"
   integrity sha512-5pf4c91JESCS28IJCgolJq/WBw4Xvf2m8FgZVUlrCig17I+qERosALAHLyyutXu403EYnyCD3DdCLaPb3aGneA==
@@ -7435,13 +7435,13 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-sanity@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-1.0.1.tgz#20d5f03c0af8d73b89e05ef21a681ed4e2b38029"
-  integrity sha512-qi750l6SwXYgJ+qnoQ8fX4whkUi8UuAAo3L689RKL00FZQ6V25hLk5P1ilYJ+D4gG2c4rKPVATiOl9qGvEPI3w==
+next-sanity@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-1.0.9.tgz#8ae6a63c77035fc7afa7567eb7794c1ff801106f"
+  integrity sha512-Iga8oF8+/sIpk3MJ5DFSDWq5ItOmsOUz0ytNksfp9g1k6aEOtLvT2eQ/vZ1WIxsnZj1tRv8LhAwPewxfM41Krw==
   dependencies:
     "@sanity/client" "^3.4.1"
-    "@sanity/groq-store" "^0.4.1"
+    "@sanity/groq-store" "^1.0.3"
     groq "^2.33.2"
 
 next-seo@^5.5.0:
